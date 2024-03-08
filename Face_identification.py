@@ -20,7 +20,7 @@ while True:
     # with which we create a rectangle box.
     face = cascade.detectMultiScale(gray, scaleFactor = 1.1, minNeighbors = 6)
 
-    # using for loop to go through the locations x,y,w,h and drow a rectangle
+    # using for loop to go through the locations x,y,w,h and draw a rectangle
     for x,y,w,h in face:
         frame = cv2.rectangle(frame, (x,y), (x+w,y+h), (0,255,255), 3)
         
